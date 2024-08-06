@@ -1,0 +1,17 @@
+## Interface: 110000
+## Title: Nostalgia
+## Notes: Takes a screenshot everytime you get an achievement
+## Notes-ptBR: Salva uma captura de tela toda conquista que você adquirir
+## Author: Ítalo Barboza
+## Version: 0.0.1
+## IconTexture: Interface\AddOns\Nostalgia\Media\nostalgia_icon
+## SavedVariables: NostalgiaDB
+
+embeds.xml
+
+Locales.lua
+Locales/enUS.lua
+Locales/ptBR.lua
+
+Nostalgia.lua
+NostalgiaOptions.lua

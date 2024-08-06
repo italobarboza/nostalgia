@@ -1,2 +1,3 @@
-# nostalgia
-Add-on for World of Warcraft that automates screenshot capture based on the events selected in the available options
+# Nostalgia
+
+Add-on for World of Warcraft that take a screenshot every achievement or milestone that you get in the game.
