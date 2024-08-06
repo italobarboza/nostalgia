@@ -97,31 +97,6 @@ local options = {
                     width = "full"
                 }
             }
-        },
-        about = {
-            type = "group",
-            name = L["About"],
-            order = 2,
-            args = {
-                website = {
-                    type = "description",
-                    name = "Website: |cff5c6887http://doe.com|r",
-                    fontSize = "medium",
-                    order = 1
-                },
-                email = {
-                    type = "description",
-                    name = "Email: |cff5c6887john@doe.com|r",
-                    fontSize = "medium",
-                    order = 2
-                },
-                acknowledgements = {
-                    type = "description",
-                    name = "Acknowledgements: |cff5c6887" .. "Name1, Name2, Name3|r",
-                    fontSize = "medium",
-                    order = 3
-                }
-            }
         }
     }
 }
