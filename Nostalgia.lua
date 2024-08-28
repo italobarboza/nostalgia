@@ -15,6 +15,8 @@ local defaults = {
     }
 }
 
+local L = LibStub("AceLocale-3.0"):GetLocale("Nostalgia")
+
 -- Function to display a message in the chat
 local function ShowScreenshotMessage(message)
     DEFAULT_CHAT_FRAME:AddMessage(message, 1.0, 1.0, 0.0)
