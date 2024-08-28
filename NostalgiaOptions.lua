@@ -18,18 +18,31 @@ local options = {
             name = L["General Settings"],
             order = 1,
             args = {
-                achievement = {
+                personalAchievement = {
                     type = "toggle",
-                    name = L["Take Screenshot on Achievement"],
-                    desc = L["Enable or disable taking screenshots when you earn an achievement."],
-                    get = function()
-                        return Nostalgia.db.profile.achievement
+                    name = L["Take Screenshot on Personal Achievements"],
+                    desc = L["Enable or disable taking screenshots when you earn a personal achievement."],
+                    get = function(info)
+                        return Nostalgia.db.profile.personalAchievement
                     end,
-                    set = function(_, value)
-                        Nostalgia.db.profile.achievement = value
+                    set = function(info, value)
+                        Nostalgia.db.profile.personalAchievement = value
                     end,
-                    order = 1,
-                    width = "full"
+                    width = "full",
+                    order = 1
+                },
+                guildAchievement = {
+                    type = "toggle",
+                    name = L["Take Screenshot on Guild Achievements"],
+                    desc = L["Enable or disable taking screenshots when your guild earns an achievement."],
+                    get = function(info)
+                        return Nostalgia.db.profile.guildAchievement
+                    end,
+                    set = function(info, value)
+                        Nostalgia.db.profile.guildAchievement = value
+                    end,
+                    width = "full",
+                    order = 2
                 },
                 bossKill = {
                     type = "toggle",
@@ -40,19 +53,6 @@ local options = {
                     end,
                     set = function(_, value)
                         Nostalgia.db.profile.bossKill = value
-                    end,
-                    order = 2,
-                    width = "full"
-                },
-                rareNPC = {
-                    type = "toggle",
-                    name = L["Take Screenshot on Rare NPC Kill"],
-                    desc = L["Enable or disable taking screenshots when you kill a rare NPC."],
-                    get = function()
-                        return Nostalgia.db.profile.rareNPC
-                    end,
-                    set = function(_, value)
-                        Nostalgia.db.profile.rareNPC = value
                     end,
                     order = 3,
                     width = "full"
@@ -80,20 +80,7 @@ local options = {
                     set = function(_, value)
                         Nostalgia.db.profile.levelUp = value
                     end,
-                    order = 6,
-                    width = "full"
-                },
-                tradeComplete = {
-                    type = "toggle",
-                    name = L["Take Screenshot on Trade Complete"],
-                    desc = L["Enable or disable taking screenshots when a trade is completed."],
-                    get = function()
-                        return Nostalgia.db.profile.tradeComplete
-                    end,
-                    set = function(_, value)
-                        Nostalgia.db.profile.tradeComplete = value
-                    end,
-                    order = 7,
+                    order = 5,
                     width = "full"
                 }
             }
