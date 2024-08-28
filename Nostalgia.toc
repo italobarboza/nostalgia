@@ -12,6 +12,8 @@ embeds.xml
 Locales.lua
 Locales/enUS.lua
 Locales/ptBR.lua
+Locales/zhTW.lua
+Locales/zhCN.lua
 
 Nostalgia.lua
 NostalgiaOptions.lua
