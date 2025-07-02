@@ -24,8 +24,10 @@ end
 
 -- Function to take a screenshot and show a message with event origin
 local function TakeScreenshotAndShowMessage(eventType)
-    Screenshot() -- Capture the screenshot
-    ShowScreenshotMessage("Screenshot taken: " .. eventType)
+    C_Timer.After(2, function() 
+        Screenshot() -- Capture the screenshot
+        ShowScreenshotMessage("Screenshot taken: " .. eventType)
+    end)
 end
 
 -- Function to check if the player is in a battleground or arena
